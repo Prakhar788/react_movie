@@ -1,0 +1,49 @@
+.outer-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    text-align: center;
+    gap: 30px;
+    
+}
+.container a{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+     transition: all 0.3s linear;
+
+}
+.container h1{
+    margin-bottom: 20px;
+   
+    
+}
+.container a:hover{
+    transform: translateY(-1.5rem);
+    color:rgb(49, 54, 54);
+    background-color: antiquewhite;
+}
+img{
+    transition: all 0.5s linear;
+    border-radius: 5px;
+    
+}
+@media (max-width: 850px) {
+    .container {
+      margin: auto;
+      max-width: 110rem;
+    
+   
+      grid-template-columns: 1fr 1fr 1fr;
+    
+    }}
+   
